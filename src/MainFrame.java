@@ -4,7 +4,7 @@ import javax.swing.*;
 /**
  * 
  * @author Bartek Lukasik
- * @version 2020-04-07
+ * @version 2020-05-22
  *
  */
 
@@ -43,7 +43,6 @@ public class MainFrame extends JFrame
 				{
 					game.getBoardToFill().set(board.getCurrentField(), buttons.getButtonPreseed());
 					repaint();
-					buttons.resetButtonPressed();
 					if(!game.getBoardToFill().contains(null))	//pops message when board is completed and shows number of mistakes made
 					{
 						JOptionPane.showMessageDialog(this, "Congratulations! You made: " + ((Integer) mistakes).toString() + " mistakes.", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);

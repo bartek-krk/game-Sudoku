@@ -46,7 +46,7 @@ public class MenuBar extends JMenuBar
 		
 		public void actionPerformed(ActionEvent event)
 		{
-			JOptionPane.showMessageDialog(getTopLevelAncestor(), "<html>Author: Bartek Lukasik<br>Current version: 2020-04-07<br>Any enquiries: <a href=\"github.com/bartek-krk/\">github.com/bartek-krk/</a></html>", "Author", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(getTopLevelAncestor(), "<html>Author: Bartek Lukasik<br>Current version: v.1.1 (2020-05-22)<br>Any enquiries: <a href=\"github.com/bartek-krk/\">github.com/bartek-krk/</a></html>", "Author", JOptionPane.PLAIN_MESSAGE);
 		}
 	}
 }
