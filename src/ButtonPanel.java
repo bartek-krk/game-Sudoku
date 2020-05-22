@@ -3,7 +3,7 @@ import javax.swing.*;
 /**
  * 
  * @author Bartek Lukasik
- * @version 2020-04-07
+ * @version 2020-05-22
  * Button panel to choose entered numbers
  *
  */
@@ -16,6 +16,7 @@ public class ButtonPanel extends JPanel
 	
 	ButtonPanel()
 	{
+		buttonPressed = 1;
 		numbersGroup = new ButtonGroup();
 		for(int i=1;i<10;i++) createButton(i);
 	}
@@ -24,11 +25,10 @@ public class ButtonPanel extends JPanel
 	{
 		String number = ((Integer) label).toString();
 		JRadioButton button = new JRadioButton(number, label==1);
-		button.addActionListener(event -> buttonPressed = label);
+		button.addActionListener(event -> this.buttonPressed = label);
 		numbersGroup.add(button);
 		add(button);
 	}
 	
 	public Integer getButtonPreseed() {return this.buttonPressed;}
-	public void resetButtonPressed() {this.buttonPressed = null;}
 }
